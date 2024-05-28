@@ -1,0 +1,167 @@
+/* Importo fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
+header {
+  background: #000000;
+  color: #FFFFFF;
+  padding: 10px 0;
+}
+
+header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .brand {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header nav .menu-icon {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+header nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+header nav .nav-links li {
+  margin-left: 20px;
+}
+
+header nav .nav-links a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1em;
+}
+
+header nav input[type="checkbox"] {
+  display: none;
+}
+
+header nav input[type="checkbox"]:checked ~ .nav-links {
+  display: block;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+footer {
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Additional Styles */
+#objetivo .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#objetivo .content img.right-img {
+  max-width: 30%; /* Ancho máximo de la imagen */
+  height: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  header nav .nav-links {
+    flex-direction: column;
+    display: none;
+  }
+
+  header nav input[type="checkbox"]:checked ~ .nav-links {
+    display: block;
+  }
+
+  header nav .menu-icon {
+    display: block;
+  }
+
+  header nav .nav-links li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #objetivo .content {
+    flex-direction: column;
+  }
+
+  #objetivo .content img.right-img {
+    max-width: 100%;
+    margin: 20px 0 0 0;
+  }
+}

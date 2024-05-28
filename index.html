@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reclamos de Uber</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="container">
+        <a class="brand" href="#">Uber Complains</a>
+        <label for="toggle" class="menu-icon">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <ul class="nav-links">
+          <li><a href="#objetivo">Objetivo</a></li>
+          <li><a href="#quienes-somos">Quiénes Somos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Objetivo Section -->
+    <section id="objetivo" class="section">
+      <h2>Objetivo de la Web</h2>
+      <div class="content">
+        <p>Nuestro objetivo es proporcionar una plataforma fácil de usar para que los usuarios de Uber puedan presentar sus reclamos de manera eficiente y rápida. Nos comprometemos a garantizar que cada reclamo sea escuchado y tratado con la seriedad que merece.</p>
+        <img src="images/imagen.jpg" alt="Objetivo de la web" class="right-img">
+      </div>
+    </section>
+
+    <!-- Quiénes Somos Section -->
+    <section id="quienes-somos" class="section">
+      <h2>Quiénes Somos</h2>
+      <p>Somos parte del equipo de Uber Argentina y estamos a disposición para ayudarte con tu consulta o inconveniente relacionado con tus viajes en la aplicación.</p>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="section">
+      <h2>Formulario de Contacto. ¡Dejanos tu reclamo!</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" placeholder="Ingrese su número de teléfono">
+        </div>
+        <div class="form-group">
+          <label for="reclamo">Reclamo</label>
+          <textarea id="reclamo" rows="5" placeholder="Describa su reclamo"></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Reclamo</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Reclamos Uber. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
